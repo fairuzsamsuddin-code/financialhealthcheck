@@ -14,7 +14,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f6f7; /* Very light tinted background based on the palette */
+            background-color: #f8f6f7;
             color: #4A4A4A;
             padding-left: env(safe-area-inset-left);
             padding-right: env(safe-area-inset-right);
@@ -148,7 +148,7 @@
             transition: width 0.5s ease-in-out, background-color 0.5s ease;
         }
         
-        /* --- NEW PDF EXPORT STYLES --- */
+        /* --- PDF EXPORT STYLES --- */
         #pdf-container {
             position: absolute;
             left: -9999px;
@@ -189,7 +189,6 @@
         .pdf-ind-bar-fill { height: 100%; border-radius: 3px; }
         .pdf-ind-target { font-size: 11px; color: #6B7280; font-weight: 500;}
         
-        /* Beautified detailed table styles */
         .pdf-table-wrapper { border-radius: 12px; overflow: hidden; border: 1px solid #E5E7EB; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background: #fff;}
         .pdf-details-table { width: 100%; border-collapse: collapse; font-size: 12px; }
         .pdf-details-table th { text-align: left; background: #461233; padding: 12px 15px; font-weight: 700; color: #ffffff; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px;}
@@ -202,7 +201,6 @@
         .pdf-details-table tr.section-total td { font-weight: 800; background: #ffffff; border-top: 2px solid #E5E7EB; border-bottom: 2px solid #E5E7EB; padding-top: 12px; padding-bottom: 12px;}
         .pdf-details-table tr.total-row td { background: #f8f6f7; font-weight: 800; font-size: 14px; border-top: 3px solid #461233; padding-top: 14px; padding-bottom: 14px;}
         
-        /* --- RESPONSIVE & MOBILE OPTIMIZATIONS --- */
         @media (max-width: 768px) {
             input[type="text"], input[type="number"], select, .currency-input, .tvm-input, .cash-flow-input, .net-worth-input {
                 font-size: 16px !important;
@@ -249,7 +247,7 @@
                    <span class="text-xl font-black tracking-tight text-gray-900 hidden sm:inline-block">FS HealthCheck</span>
                 </div>
                 
-                <!-- New Tabbed Navigation -->
+                <!-- Tabbed Navigation -->
                 <nav class="hidden lg:flex flex-nowrap overflow-x-auto no-scrollbar items-center space-x-1 nav-container border border-gray-200/50">
                     <a href="#client-profile" class="nav-link flex-1 text-center whitespace-nowrap text-gray-600 px-5 py-3 text-sm font-bold transition-all rounded-full hover:bg-white/60 hover:shadow-sm cursor-pointer">Profile</a>
                     <a href="#cash-flow" class="nav-link flex-1 text-center whitespace-nowrap text-gray-600 px-5 py-3 text-sm font-bold transition-all rounded-full hover:bg-white/60 hover:shadow-sm cursor-pointer">Cash Flow</a>
@@ -265,7 +263,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
                         <span class="hidden sm:inline ml-2 text-sm">Share</span>
                     </button>
-                    <button id="pdfButton" title="Download Full Report" class="flex items-center justify-center w-10 h-10 sm:w-auto sm:px-5 sm:py-2.5 rounded-full text-white bg-gradient-to-r from-[#461233] to-[#654a5c] hover:from-[#2f0c22] hover:to-[#4f3948] font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                    <button id="pdfButton" title="Download Full Report" class="flex items-center justify-center w-10 h-10 sm:w-auto sm:px-5 sm:py-2.5 rounded-full text-white bg-gradient-to-r from-[#461233] to-[#8a5766] hover:from-[#2f0c22] hover:to-[#654a5c] font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
                         <span class="hidden sm:inline ml-2 text-sm">Export PDF</span>
                     </button>
@@ -339,9 +337,9 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Inflows -->
-                <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+                <div class="bg-[#f8f6f7] p-5 rounded-lg border border-[#ad8b96]">
                     <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-blue-200 text-blue-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">↓</span>
+                        <span class="bg-[#ad8b96] text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">↓</span>
                         Cash Inflows (Monthly)
                     </h3>
                     
@@ -358,36 +356,36 @@
                         <span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="inflowOther" class="currency-input cash-flow-input" value="500">
                     </div>
 
-                    <div class="mt-6 pt-4 border-t-2 border-blue-200 flex justify-between items-center">
+                    <div class="mt-6 pt-4 border-t-2 border-[#ad8b96] flex justify-between items-center">
                         <span class="font-bold text-gray-700 text-lg">Total Available Cash (Net + Other)</span>
-                        <span class="text-2xl md:text-3xl font-black tracking-tight text-blue-800 tabular-nums drop-shadow-sm" id="calcTotalInflows">RM 0</span>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-[#461233] tabular-nums drop-shadow-sm" id="calcTotalInflows">RM 0</span>
                     </div>
                 </div>
 
                 <!-- Outflows -->
-                <div class="bg-orange-50 p-5 rounded-lg border border-orange-100">
+                <div class="bg-[#f8f6f7] p-5 rounded-lg border border-[#ad8b96]">
                     <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-orange-200 text-orange-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">↑</span>
+                        <span class="bg-[#461233] text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">↑</span>
                         Cash Outflows (Monthly)
                     </h3>
                     
                     <h4 class="font-semibold text-sm text-gray-600 mb-2 mt-4 uppercase tracking-wider">Savings & Investments</h4>
                     <div class="input-group"><label>Monthly Savings/Investments (Self-directed)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="outflowSavings" class="currency-input cash-flow-input" value="800"></div>
 
-                    <h4 class="font-semibold text-sm text-gray-800 mb-1 mt-6 uppercase tracking-wider border-b border-orange-200 pb-1">1. Must-Have Expenses</h4>
+                    <h4 class="font-semibold text-sm text-gray-800 mb-1 mt-6 uppercase tracking-wider border-b border-[#ad8b96] pb-1">1. Must-Have Expenses</h4>
                     <p class="text-xs text-gray-500 mb-3 leading-relaxed"><strong>Includes:</strong> Core living costs and debt commitments.</p>
                     
-                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-orange-200">
+                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-[#ad8b96]">
                         <div class="input-group mb-0">
-                            <label class="text-xs font-semibold text-gray-700">Home Loan / Rent <span class="text-orange-600 font-bold">(Debt)</span></label>
+                            <label class="text-xs font-semibold text-gray-700">Home Loan / Rent <span class="text-[#8a5766] font-bold">(Debt)</span></label>
                             <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" inputmode="numeric" id="outflowMust_RentMortgage" class="currency-input cash-flow-input text-sm py-1.5" value="1200">
                         </div>
                         <div class="input-group mb-0">
-                            <label class="text-xs font-semibold text-gray-700">Vehicle Loan / HP <span class="text-orange-600 font-bold">(Debt)</span></label>
+                            <label class="text-xs font-semibold text-gray-700">Vehicle Loan / HP <span class="text-[#8a5766] font-bold">(Debt)</span></label>
                             <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" inputmode="numeric" id="outflowMust_VehicleLoan" class="currency-input cash-flow-input text-sm py-1.5" value="600">
                         </div>
                         <div class="input-group mb-0">
-                            <label class="text-xs font-semibold text-gray-700">Personal Loans / Credit Cards <span class="text-orange-600 font-bold">(Debt)</span></label>
+                            <label class="text-xs font-semibold text-gray-700">Personal Loans / Credit Cards <span class="text-[#8a5766] font-bold">(Debt)</span></label>
                             <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" inputmode="numeric" id="outflowMust_PersonalCredit" class="currency-input cash-flow-input text-sm py-1.5" value="300">
                         </div>
                         <div class="input-group mb-0">
@@ -415,19 +413,19 @@
                     <div class="input-group">
                         <label class="flex justify-between items-end">
                             <span class="font-bold">Total Must-Have Expenses</span>
-                            <span class="text-xs font-bold text-orange-700 bg-orange-100 px-2 py-1 rounded" id="pctMustHave">0% of Net Income</span>
+                            <span class="text-xs font-bold text-[#461233] bg-[#dbd9da] px-2 py-1 rounded" id="pctMustHave">0% of Net Income</span>
                         </label>
                         <span class="input-prefix">RM</span><input type="text" id="outflowMustTotal" class="currency-input cash-flow-input bg-gray-100 border-gray-200 text-gray-600 cursor-not-allowed" readonly value="3800">
                     </div>
                     <div class="input-group mt-2 mb-6">
-                        <label class="text-xs text-orange-700 italic">└ Automatically calculated total Debt portion (for DSR)</label>
-                        <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" id="outflowDebtPortion" class="currency-input cash-flow-input text-sm py-1.5 bg-orange-50 border-orange-200 text-orange-800 cursor-not-allowed font-bold" readonly value="2100">
+                        <label class="text-xs text-[#8a5766] italic">└ Automatically calculated total Debt portion (for DSR)</label>
+                        <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" id="outflowDebtPortion" class="currency-input cash-flow-input text-sm py-1.5 bg-white border-[#ad8b96] text-[#461233] cursor-not-allowed font-bold" readonly value="2100">
                     </div>
 
-                    <h4 class="font-semibold text-sm text-teal-800 mb-1 mt-6 uppercase tracking-wider border-b border-teal-200 pb-1">2. Peace of Mind Expenses</h4>
+                    <h4 class="font-semibold text-sm text-[#461233] mb-1 mt-6 uppercase tracking-wider border-b border-[#ad8b96] pb-1">2. Peace of Mind Expenses</h4>
                     <p class="text-xs text-gray-500 mb-3 leading-relaxed"><strong>Includes:</strong> Protection, charity, and well-being.</p>
                     
-                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-teal-200">
+                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-[#ad8b96]">
                         <div class="input-group mb-0">
                             <label class="text-xs font-semibold text-gray-700">Life Insurance/Hibah</label>
                             <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" inputmode="numeric" id="outflowPeace_Insurance" class="currency-input cash-flow-input text-sm py-1.5" value="600">
@@ -449,15 +447,15 @@
                     <div class="input-group mb-6">
                         <label class="flex justify-between items-end">
                             <span class="font-bold">Total Peace of Mind Expenses</span>
-                            <span class="text-xs font-bold text-teal-700 bg-teal-100 px-2 py-1 rounded" id="pctPeaceMind">0% of Net Income</span>
+                            <span class="text-xs font-bold text-[#461233] bg-[#dbd9da] px-2 py-1 rounded" id="pctPeaceMind">0% of Net Income</span>
                         </label>
                         <span class="input-prefix">RM</span><input type="text" id="outflowPeaceTotal" class="currency-input cash-flow-input bg-gray-100 border-gray-200 text-gray-600 cursor-not-allowed" readonly value="1200">
                     </div>
 
-                    <h4 class="font-semibold text-sm text-gray-800 mb-1 mt-6 uppercase tracking-wider border-b border-orange-200 pb-1">3. Need-to-Have Expenses</h4>
+                    <h4 class="font-semibold text-sm text-gray-800 mb-1 mt-6 uppercase tracking-wider border-b border-[#ad8b96] pb-1">3. Need-to-Have Expenses</h4>
                     <p class="text-xs text-gray-500 mb-3 leading-relaxed"><strong>Includes:</strong> Practical lifestyle and family requirements.</p>
 
-                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-orange-200">
+                    <div class="space-y-3 mb-4 pl-4 border-l-2 border-[#ad8b96]">
                         <div class="input-group mb-0">
                             <label class="text-xs font-semibold text-gray-700">Dining Out for Convenience (Non-luxury)</label>
                             <span class="input-prefix text-xs" style="bottom: 0.5rem;">RM</span><input type="text" inputmode="numeric" id="outflowNeed_Dining" class="currency-input cash-flow-input text-sm py-1.5" value="400">
@@ -483,12 +481,12 @@
                     <div class="input-group mb-6">
                         <label class="flex justify-between items-end">
                             <span class="font-bold">Total Need-To-Have Expenses</span>
-                            <span class="text-xs font-bold text-orange-700 bg-orange-100 px-2 py-1 rounded" id="pctNeedHave">0% of Net Income</span>
+                            <span class="text-xs font-bold text-[#461233] bg-[#dbd9da] px-2 py-1 rounded" id="pctNeedHave">0% of Net Income</span>
                         </label>
                         <span class="input-prefix">RM</span><input type="text" id="outflowNeedTotal" class="currency-input cash-flow-input bg-gray-100 border-gray-200 text-gray-600 cursor-not-allowed" readonly value="900">
                     </div>
 
-                    <div class="bg-[#f8f6f7] border-2 border-[#ad8b96] rounded-lg p-4 mt-6 mb-4 shadow-sm">
+                    <div class="bg-white border-2 border-[#ad8b96] rounded-lg p-4 mt-6 mb-4 shadow-sm">
                         <h4 class="font-black text-md text-[#461233] mb-2 uppercase tracking-wider border-b-2 border-[#ad8b96] pb-1">4. Nice-to-Have Expenses</h4>
                         <p class="text-sm font-bold text-[#654a5c] mb-3 leading-relaxed"><strong>Includes:</strong> Discretionary spending, entertainment, and luxuries.</p>
                         
@@ -528,9 +526,9 @@
                         </div>
                     </div>
 
-                    <div class="mt-6 pt-4 border-t-2 border-orange-200 flex justify-between items-center">
+                    <div class="mt-6 pt-4 border-t-2 border-[#ad8b96] flex justify-between items-center">
                         <span class="font-bold text-gray-700 text-lg">Total Outflows</span>
-                        <span class="text-2xl md:text-3xl font-black tracking-tight text-orange-800 tabular-nums drop-shadow-sm" id="calcTotalOutflows">RM 0</span>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-[#461233] tabular-nums drop-shadow-sm" id="calcTotalOutflows">RM 0</span>
                     </div>
                 </div>
             </div>
@@ -551,9 +549,9 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Assets -->
-                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <div class="bg-[#f8f6f7] p-5 rounded-lg border border-[#ad8b96]">
                     <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-green-100 text-green-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">+</span>
+                        <span class="bg-[#ad8b96] text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">+</span>
                         Assets (What You Own)
                     </h3>
                     
@@ -570,31 +568,31 @@
                     <div class="input-group"><label>Property (Current Market Value)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="assetProperty" class="currency-input net-worth-input" value="450000"></div>
                     <div class="input-group"><label>Vehicles (Current Market Value)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="assetVehicle" class="currency-input net-worth-input" value="45000"></div>
 
-                    <div class="mt-6 pt-4 border-t-2 border-gray-300 flex justify-between items-center">
+                    <div class="mt-6 pt-4 border-t-2 border-[#ad8b96] flex justify-between items-center">
                         <span class="font-bold text-gray-700 text-lg">Total Assets</span>
-                        <span class="text-2xl md:text-3xl font-black tracking-tight text-green-700 tabular-nums drop-shadow-sm" id="calcTotalAssets">RM 0</span>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-[#461233] tabular-nums drop-shadow-sm" id="calcTotalAssets">RM 0</span>
                     </div>
                 </div>
 
                 <!-- Liabilities -->
-                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                <div class="bg-[#f8f6f7] p-5 rounded-lg border border-[#ad8b96]">
                     <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-red-100 text-red-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">-</span>
+                        <span class="bg-[#461233] text-white w-8 h-8 rounded-full inline-flex items-center justify-center mr-2">-</span>
                         Liabilities (What You Owe)
                     </h3>
                     
-                    <h4 class="font-semibold text-sm text-gray-600 mb-2 mt-4 uppercase tracking-wider">Short-Term Liabilities (< 1 yr)</h4>
+                    <h4 class="font-semibold text-sm text-gray-600 mb-2 mt-4 uppercase tracking-wider">Short-Term Liabilities (&lt; 1 yr)</h4>
                     <div class="input-group"><label>Credit Card Outstanding</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="liabCreditCard" class="currency-input net-worth-input" value="5000"></div>
                     <div class="input-group"><label>Personal Loans (Outstanding Balance)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="liabPersonalLoan" class="currency-input net-worth-input" value="15000"></div>
 
-                    <h4 class="font-semibold text-sm text-gray-600 mb-2 mt-6 uppercase tracking-wider">Long-Term Liabilities (> 1 yr)</h4>
+                    <h4 class="font-semibold text-sm text-gray-600 mb-2 mt-6 uppercase tracking-wider">Long-Term Liabilities (&gt; 1 yr)</h4>
                     <div class="input-group"><label>Mortgage / Housing Loan (Outstanding)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="liabMortgage" class="currency-input net-worth-input" value="380000"></div>
                     <div class="input-group"><label>Vehicle Hire Purchase (Outstanding)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="liabVehicle" class="currency-input net-worth-input" value="30000"></div>
                     <div class="input-group"><label>Education Loan (e.g., PTPTN)</label><span class="input-prefix">RM</span><input type="text" inputmode="numeric" id="liabEducation" class="currency-input net-worth-input" value="12000"></div>
 
-                    <div class="mt-6 pt-4 border-t-2 border-gray-300 flex justify-between items-center">
+                    <div class="mt-6 pt-4 border-t-2 border-[#ad8b96] flex justify-between items-center">
                         <span class="font-bold text-gray-700 text-lg">Total Liabilities</span>
-                        <span class="text-2xl md:text-3xl font-black tracking-tight text-red-700 tabular-nums drop-shadow-sm" id="calcTotalLiabilities">RM 0</span>
+                        <span class="text-2xl md:text-3xl font-black tracking-tight text-[#8a5766] tabular-nums drop-shadow-sm" id="calcTotalLiabilities">RM 0</span>
                     </div>
                 </div>
             </div>
@@ -613,7 +611,7 @@
                         <span id="badgeLiquidity" class="status-badge">...</span>
                     </div>
                     <p class="text-4xl font-black text-[#461233] mb-1 tabular-nums tracking-tighter" id="valLiquidity">0 Months</p>
-                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: > 12 Months</p>
+                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: &gt; 12 Months</p>
                     
                     <div class="progress-bar-bg">
                         <div id="barLiquidity" class="progress-bar-fill" style="width: 0%"></div>
@@ -630,7 +628,7 @@
                         <span id="badgeDebtAsset" class="status-badge">...</span>
                     </div>
                     <p class="text-4xl font-black text-[#461233] mb-1 tabular-nums tracking-tighter" id="valDebtAsset">0%</p>
-                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: < 50%</p>
+                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: &lt; 50%</p>
                     
                     <div class="progress-bar-bg">
                         <div id="barDebtAsset" class="progress-bar-fill" style="width: 0%"></div>
@@ -664,7 +662,7 @@
                         <span id="badgeSavings" class="status-badge">...</span>
                     </div>
                     <p class="text-4xl font-black text-[#461233] mb-1 tabular-nums tracking-tighter" id="valSavings">0%</p>
-                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: > 10%</p>
+                    <p class="text-xs text-gray-500 mb-4 font-medium uppercase tracking-wider">Target: &gt; 10%</p>
                     
                     <div class="progress-bar-bg">
                         <div id="barSavings" class="progress-bar-fill" style="width: 0%"></div>
@@ -679,7 +677,7 @@
         </section>
 
         <!-- 5. Detailed Financial Needs Analysis (TVM) -->
-        <section id="needs-analysis" class="section-container bg-blue-50/30">
+        <section id="needs-analysis" class="section-container bg-[#f8f6f7]/50 border-[#ad8b96]">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 border-b pb-2 border-gray-200">
                 <div>
                     <h2 class="text-2xl font-bold text-gray-800">5. Financial Needs Analysis</h2>
@@ -732,7 +730,7 @@
                         </div>
                         <div class="flex justify-between items-center text-sm font-bold text-gray-700 bg-gray-100 p-2 rounded border border-gray-200 my-1">
                             <span class="flex-1">Total Fund needed:</span>
-                            <span id="naDeathTotalFund" class="w-1/2 sm:w-2/5 text-right text-blue-800 pr-4 shrink-0">RM 0</span>
+                            <span id="naDeathTotalFund" class="w-1/2 sm:w-2/5 text-right text-[#461233] pr-4 shrink-0">RM 0</span>
                         </div>
 
                         <div class="flex justify-between items-center mt-2">
@@ -794,7 +792,7 @@
                         </div>
                         <div class="flex justify-between items-center text-sm font-bold text-gray-700 bg-gray-100 p-2 rounded border border-gray-200 my-1">
                             <span class="flex-1">Total Fund needed:</span>
-                            <span id="naDisTotalFund" class="w-1/2 sm:w-2/5 text-right text-blue-800 pr-4 shrink-0">RM 0</span>
+                            <span id="naDisTotalFund" class="w-1/2 sm:w-2/5 text-right text-[#461233] pr-4 shrink-0">RM 0</span>
                         </div>
 
                         <div class="flex justify-between items-center mt-2">
@@ -856,7 +854,7 @@
                         </div>
                         <div class="flex justify-between items-center text-sm font-bold text-gray-700 bg-gray-100 p-2 rounded border border-gray-200 my-1">
                             <span class="flex-1">Total Fund needed:</span>
-                            <span id="naCiTotalFund" class="w-1/2 sm:w-2/5 text-right text-blue-800 pr-4 shrink-0">RM 0</span>
+                            <span id="naCiTotalFund" class="w-1/2 sm:w-2/5 text-right text-[#461233] pr-4 shrink-0">RM 0</span>
                         </div>
 
                         <div class="flex justify-between items-center mt-2">
@@ -923,7 +921,7 @@
                         </div>
                         <div class="flex justify-between items-center text-sm font-bold text-gray-700 bg-gray-100 p-2 rounded border border-gray-200 my-1">
                             <span class="flex-1">Fund needed at ret. (PV2):</span>
-                            <span id="naRetPV2" class="w-1/2 sm:w-2/5 text-right text-blue-800 pr-4 shrink-0">RM 0</span>
+                            <span id="naRetPV2" class="w-1/2 sm:w-2/5 text-right text-[#461233] pr-4 shrink-0">RM 0</span>
                         </div>
                         
                         <div class="flex justify-between items-center mt-2">
@@ -992,7 +990,7 @@
                             </div>
                             <div class="flex justify-between items-center text-sm font-bold text-gray-700 bg-gray-100 p-2 rounded border border-gray-200 my-1">
                                 <span class="flex-1">Total fund needed (FV1):</span>
-                                <span id="naWealthFV1" class="w-1/2 sm:w-2/5 text-right text-blue-800 pr-4 shrink-0">RM 0</span>
+                                <span id="naWealthFV1" class="w-1/2 sm:w-2/5 text-right text-[#461233] pr-4 shrink-0">RM 0</span>
                             </div>
                             
                             <div class="flex justify-between items-center mt-2">
@@ -1040,13 +1038,13 @@
 
             <!-- Needs Analysis Comparison Summary Table -->
             <div class="bg-white rounded-lg border border-gray-300 shadow-sm overflow-hidden">
-                <div class="bg-gray-100 border-b border-gray-300 px-5 py-4">
-                    <h3 class="font-black text-gray-800 text-lg tracking-wide uppercase">Needs vs Coverage Comparison Summary</h3>
+                <div class="bg-[#461233] text-white px-5 py-4">
+                    <h3 class="font-black text-lg tracking-wide uppercase">Needs vs Coverage Comparison Summary</h3>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse text-sm">
                         <thead>
-                            <tr class="bg-white text-gray-500 text-xs uppercase tracking-wider">
+                            <tr class="bg-gray-50 text-gray-500 text-xs uppercase tracking-wider">
                                 <th class="p-4 border-b font-bold">Aspect</th>
                                 <th class="p-4 border-b font-bold text-right">Needs (Fund Required)</th>
                                 <th class="p-4 border-b font-bold text-right">Current Coverage/Resources</th>
@@ -1097,14 +1095,14 @@
             
             <div class="flex flex-col lg:flex-row gap-6 items-stretch">
                 <!-- Left panel (Inputs & Baseline) -->
-                <div class="flex-1 bg-[#F0F7FF] border border-[#DCE8F6] rounded-xl p-8 flex flex-col justify-center gap-6">
+                <div class="flex-1 bg-[#f8f6f7] border border-[#ad8b96] rounded-xl p-8 flex flex-col justify-center gap-6">
                     <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-100">
-                        <label class="block text-sm font-bold text-[#2A4365] mb-2 text-center uppercase tracking-wider">Expected Retirement Age</label>
-                        <input type="number" id="uiExpectedRetirementAge" value="60" class="w-full text-center text-4xl font-black text-[#2A4365] tabular-nums tracking-tight focus:outline-none focus:ring-2 focus:ring-blue-200 rounded py-2">
+                        <label class="block text-sm font-bold text-[#461233] mb-2 text-center uppercase tracking-wider">Expected Retirement Age</label>
+                        <input type="number" id="uiExpectedRetirementAge" value="60" class="w-full text-center text-4xl font-black text-[#461233] tabular-nums tracking-tight focus:outline-none focus:ring-2 focus:ring-[#ad8b96] rounded py-2">
                     </div>
                     <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-100">
-                        <label class="block text-sm font-bold text-[#2A4365] mb-2 text-center uppercase tracking-wider">Current Annual Income (RM)</label>
-                        <input type="text" id="uiAnnualIncome" class="w-full text-center text-4xl font-black text-[#2A4365] tabular-nums tracking-tight focus:outline-none py-2" readonly>
+                        <label class="block text-sm font-bold text-[#461233] mb-2 text-center uppercase tracking-wider">Current Annual Income (RM)</label>
+                        <input type="text" id="uiAnnualIncome" class="w-full text-center text-4xl font-black text-[#461233] tabular-nums tracking-tight focus:outline-none py-2" readonly>
                     </div>
                 </div>
 
@@ -1135,7 +1133,7 @@
         </section>
 
         <!-- 7. Executive Summary & Insights -->
-        <section class="section-container bg-gray-50 mt-8">
+        <section class="section-container bg-[#f8f6f7]/40 mt-8 border-[#ad8b96]">
             <h2 class="text-xl font-bold text-gray-800 mb-4">7. Executive Insights & Recommendations</h2>
             <div id="dynamicRecommendations" class="space-y-4 text-gray-700 text-sm leading-relaxed">
                 <!-- Populated via JS -->
@@ -1155,8 +1153,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
-            // Mobile Menu & Smooth Scrolling Navigation
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileNav = document.getElementById('mobile-nav');
             
@@ -1164,7 +1160,6 @@
                 mobileMenuButton.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
             }
 
-            // Handle smooth scrolling for all nav links
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', function (e) {
                     const targetId = this.getAttribute('href');
@@ -1190,7 +1185,6 @@
                 });
             });
 
-            // Share Button Logic
             const shareButton = document.getElementById('shareButton');
             if (shareButton) {
                 shareButton.addEventListener('click', async () => {
@@ -1224,7 +1218,6 @@
                 });
             }
 
-            // Scroll Spy
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('main section');
             const observer = new IntersectionObserver(entries => {
@@ -1251,7 +1244,6 @@
                 return `RM ${Math.round(value).toLocaleString('en-US')}`;
             }
 
-            // TVM Math Functions
             function calcPVAnnuity(pmt, ratePct, periods) {
                 const r = ratePct / 100;
                 if (r === 0) return pmt * periods;
@@ -1274,7 +1266,6 @@
                 return fv * (r / (Math.pow(1 + r, periods) - 1));
             }
 
-            // UNIFIED DIAGNOSTIC ENGINE
             function updateDiagnostic(badgeId, barId, value, min, max, thresholds, isHigherBetter) {
                 const badge = document.getElementById(badgeId);
                 const bar = document.getElementById(barId);
@@ -1312,7 +1303,6 @@
             }
 
             function calculateHealthCheck() {
-                // 1. Net Worth Calcs
                 const liquidAssets = getVal('assetCash') + getVal('assetFD');
                 const investAssets = getVal('assetEPF') + getVal('assetUnitTrust') + getVal('assetStocks');
                 const personalAssets = getVal('assetProperty') + getVal('assetVehicle');
@@ -1328,7 +1318,6 @@
                 document.getElementById('calcTotalLiabilities').textContent = formatCurrency(totalLiabilities);
                 document.getElementById('displayNetWorth').textContent = formatCurrency(netWorth);
 
-                // 2. Cash Flow Calcs
                 const grossIncomeBase = getVal('inflowGross');
                 const netIncomeBase = getVal('inflowNet');
                 const otherIncome = getVal('inflowOther');
@@ -1338,7 +1327,6 @@
                 
                 const outflowSavings = getVal('outflowSavings');
                 
-                // Categorized Expenses
                 const outflowDebtRaw = getVal('outflowMust_RentMortgage') + getVal('outflowMust_VehicleLoan') + getVal('outflowMust_PersonalCredit');
                 const outflowMust = outflowDebtRaw + getVal('outflowMust_Utilities') + getVal('outflowMust_Groceries') + getVal('outflowMust_Transport') + getVal('outflowMust_Childcare') + getVal('outflowMust_Others');
                 
@@ -1377,7 +1365,6 @@
                     cashFlowCard.style.background = 'linear-gradient(135deg, #8a5766, #461233)';
                 }
 
-                // 3. Ratio Diagnostics
                 let recHtml = '';
                 
                 function getDiagInfo(value, min, max, thresholds, isHigherBetter) {
@@ -1416,13 +1403,12 @@
                     </div>
                 `;
 
-                // A. Basic Liquidity 
                 let liqRatio = totalMonthlyExpenses > 0 ? (liquidAssets / totalMonthlyExpenses) : 0;
                 document.getElementById('valLiquidity').textContent = `${liqRatio.toFixed(2)} Months`;
                 updateDiagnostic('badgeLiquidity', 'barLiquidity', liqRatio, 0, 24, [6, 9, 12, 15, 18], true);
                 
                 let liqDiag = getDiagInfo(liqRatio, 0, 24, [6, 9, 12, 15, 18], true);
-                let liqTags = pillarTag('Cash Flow', '#DBEAFE', '#1E40AF', '#BFDBFE') + pillarTag('Risk Management', '#F3E8FF', '#6B21A8', '#E9D5FF');
+                let liqTags = pillarTag('Cash Flow', '#f8f6f7', '#461233', '#ad8b96') + pillarTag('Risk Management', '#f8f6f7', '#461233', '#ad8b96');
                 
                 recHtml += `<div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px dashed #E5E7EB;">${recHeader('1', 'Emergency Fund (Liquidity):', liqDiag, liqTags)}<p style="margin: 0; text-align: justify; font-size: 13px; color: #4B5563; line-height: 1.6;">`;
                 if (liqDiag.score >= 4) recHtml += `Excellent. You have ${liqRatio.toFixed(2)} months of buffer. This meets the 12-month high-security standard.`;
@@ -1431,13 +1417,12 @@
                 else recHtml += `Critical. Your fund covers less than 6 months (${liqRatio.toFixed(2)} months). High risk. Priority 1: Reach 12 months buffer urgently.`;
                 recHtml += `</p></div>`;
 
-                // B. Debt to Asset Ratio 
                 let daRatio = totalAssets > 0 ? (totalLiabilities / totalAssets) * 100 : 0;
                 document.getElementById('valDebtAsset').textContent = `${daRatio.toFixed(2)}%`;
                 updateDiagnostic('badgeDebtAsset', 'barDebtAsset', daRatio, 0, 100, [25, 40, 50, 70, 85], false);
                 
                 let daDiag = getDiagInfo(daRatio, 0, 100, [25, 40, 50, 70, 85], false);
-                let daTags = pillarTag('Debt Management', '#FEE2E2', '#991B1B', '#FECACA');
+                let daTags = pillarTag('Debt Management', '#f8f6f7', '#461233', '#ad8b96');
                 
                 recHtml += `<div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px dashed #E5E7EB;">${recHeader('2', 'Solvency (Debt-to-Asset):', daDiag, daTags)}<p style="margin: 0; text-align: justify; font-size: 13px; color: #4B5563; line-height: 1.6;">`;
                 if (daDiag.score >= 4) recHtml += `Healthy. Your debt levels are ${daRatio.toFixed(2)}% of assets. You are in a strong solvent position.`;
@@ -1446,13 +1431,12 @@
                 else recHtml += `Critical. Debt covers ${daRatio.toFixed(2)}% of your assets. High vulnerability to market changes. Potential for negative net worth.`;
                 recHtml += `</p></div>`;
 
-                // C. Debt Service Ratio 
                 let dsRatio = netIncome > 0 ? (outflowDebt / netIncome) * 100 : 0;
                 document.getElementById('valDebtService').textContent = `${dsRatio.toFixed(2)}%`;
                 updateDiagnostic('badgeDebtService', 'barDebtService', dsRatio, 0, 100, [15, 20, 30, 50, 65], false);
                 
                 let dsDiag = getDiagInfo(dsRatio, 0, 100, [15, 20, 30, 50, 65], false);
-                let dsTags = pillarTag('Cash Flow', '#DBEAFE', '#1E40AF', '#BFDBFE');
+                let dsTags = pillarTag('Cash Flow', '#f8f6f7', '#461233', '#ad8b96');
                 
                 recHtml += `<div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px dashed #E5E7EB;">${recHeader('3', 'Credit Capacity (DSR):', dsDiag, dsTags)}<p style="margin: 0; text-align: justify; font-size: 13px; color: #4B5563; line-height: 1.6;">`;
                 if (dsDiag.score >= 4) recHtml += `Healthy. Debt takes ${dsRatio.toFixed(2)}% of net income. Good cash flow flexibility.`;
@@ -1461,13 +1445,12 @@
                 else recHtml += `Critical. Over half your income (${dsRatio.toFixed(2)}%) services debt. Urgent restructuring advised.`;
                 recHtml += `</p></div>`;
 
-                // D. Savings Ratio 
                 let savRatio = grossIncome > 0 ? (outflowSavings / grossIncome) * 100 : 0;
                 document.getElementById('valSavings').textContent = `${savRatio.toFixed(2)}%`;
                 updateDiagnostic('badgeSavings', 'barSavings', savRatio, 0, 30, [2.5, 5, 10, 15, 20], true);
                 
                 let savDiag = getDiagInfo(savRatio, 0, 30, [2.5, 5, 10, 15, 20], true);
-                let savTags = pillarTag('Investment Planning', '#DCFCE7', '#166534', '#BBF7D0');
+                let savTags = pillarTag('Investment Planning', '#f8f6f7', '#461233', '#ad8b96');
                 
                 recHtml += `<div style="margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px dashed #E5E7EB;">${recHeader('4', 'Wealth Accumulation (Savings):', savDiag, savTags)}<p style="margin: 0; text-align: justify; font-size: 13px; color: #4B5563; line-height: 1.6;">`;
                 if (savDiag.score >= 4) recHtml += `Excellent. Saving ${savRatio.toFixed(2)}% of gross income. You are building future wealth effectively.`;
@@ -1491,7 +1474,6 @@
 
                 document.getElementById('dynamicRecommendations').innerHTML = recHtml;
 
-                // 4. Update Income Protection UI (Rule of thumb)
                 const expectedRetirementAge = document.getElementById('uiExpectedRetirementAge').value || 60;
                 const annualIncomeAmount = netIncome * 12;
                 document.getElementById('uiAnnualIncome').value = annualIncomeAmount.toLocaleString('en-US');
@@ -1500,8 +1482,6 @@
                 document.getElementById('uiProtTPD').textContent = `RM ${(annualIncomeAmount * 10).toLocaleString('en-US')}`;
                 document.getElementById('uiProtDeath').textContent = `RM ${(annualIncomeAmount * 10).toLocaleString('en-US')}`;
 
-
-                // --- 6. NEEDS ANALYSIS (TVM ENGINE) ---
                 const getNum = (id) => parseFloat(document.getElementById(id).value) || 0;
                 
                 const updateShortfallUI = (need, cov, shortfallId, rowNeedId, rowCovId, rowShortfallId) => {
@@ -1520,7 +1500,6 @@
                     return sfAmt;
                 };
 
-                // Death
                 const dPV = calcPVAnnuity(getVal('naDeathPMT'), getNum('naDeathRate'), getNum('naDeathYears'));
                 document.getElementById('naDeathPV').textContent = formatCurrency(dPV);
                 const dFund = dPV + getVal('naDeathAddCash') + getVal('naDeathAddLiab');
@@ -1528,23 +1507,20 @@
                 const dCov = getVal('naDeathLessIns') + getVal('naDeathLessInv');
                 updateShortfallUI(dFund, dCov, 'naDeathShortfall', 'sumDeathNeed', 'sumDeathCov', 'sumDeathShortfall');
 
-                // Disability
                 const disPV = calcPVAnnuity(getVal('naDisPMT'), getNum('naDisRate'), getNum('naDisYears'));
                 document.getElementById('naDisPV').textContent = formatCurrency(disPV);
-                const disFund = disPV + getVal('naDisAdd'); // Treatment Cost & liabilities
+                const disFund = disPV + getVal('naDisAdd');
                 document.getElementById('naDisTotalFund').textContent = formatCurrency(disFund);
                 const disCov = getVal('naDisLessIns') + getVal('naDisLessInv');
                 updateShortfallUI(disFund, disCov, 'naDisShortfall', 'sumDisNeed', 'sumDisCov', 'sumDisShortfall');
 
-                // Critical Illness
                 const ciPV = calcPVAnnuity(getVal('naCiPMT'), getNum('naCiRate'), getNum('naCiYears'));
                 document.getElementById('naCiPV').textContent = formatCurrency(ciPV);
-                const ciFund = ciPV + getVal('naCiAdd'); // Treatment Cost
+                const ciFund = ciPV + getVal('naCiAdd');
                 document.getElementById('naCiTotalFund').textContent = formatCurrency(ciFund);
                 const ciCov = getVal('naCiLessIns') + getVal('naCiLessInv');
                 updateShortfallUI(ciFund, ciCov, 'naCiShortfall', 'sumCiNeed', 'sumCiCov', 'sumCiShortfall');
 
-                // Retirement
                 const retPV1 = getVal('naRetPV');
                 const retN1 = getNum('naRetN1');
                 const retFV1 = calcFV(retPV1, getNum('naRetI1'), retN1);
@@ -1556,7 +1532,6 @@
                 const retCov = getVal('naRetLessRes') + getVal('naRetLessPol');
                 const retShortfall = updateShortfallUI(retPV2, retCov, 'naRetShortfall', 'sumRetNeed', 'sumRetCov', 'sumRetShortfall');
 
-                // Calculate Single sum and Annual PMT to cover shortfall for Retirement
                 if(retShortfall > 0) {
                     const retI4 = getNum('naRetI4');
                     const retPV4 = calcPVSingle(retShortfall, retI4, retN1);
@@ -1568,7 +1543,6 @@
                     document.getElementById('naRetPMT4').textContent = 'RM 0';
                 }
 
-                // Wealth Accumulation
                 const wPV = getVal('naWealthPV');
                 const wN1 = getNum('naWealthN1');
                 const wFV = calcFV(wPV, getNum('naWealthI1'), wN1);
@@ -1577,7 +1551,6 @@
                 const wCov = getVal('naWealthLessRes') + getVal('naWealthLessPol');
                 const wShortfall = updateShortfallUI(wFV, wCov, 'naWealthShortfall', 'sumWealthNeed', 'sumWealthCov', 'sumWealthShortfall');
 
-                // Calculate Single sum and Annual PMT to cover shortfall for Wealth Accumulation
                 if(wShortfall > 0) {
                     const wI3 = getNum('naWealthI3');
                     const wPV3 = calcPVSingle(wShortfall, wI3, wN1);
@@ -1590,7 +1563,6 @@
                 }
             }
 
-            // Input Handling
             function handleNumberInput(e) {
                 if (!e.target.classList.contains('currency-input')) return;
                 let cursorPosition = e.target.selectionStart;
@@ -1615,7 +1587,6 @@
 
             calculateHealthCheck();
 
-            // PDF Export Engine
             const pdfButton = document.getElementById('pdfButton');
             pdfButton.addEventListener('click', async () => {
                 const { jsPDF } = window.jspdf;
@@ -1775,10 +1746,10 @@
                             <div class="pdf-section">
                                 <div class="pdf-section-title">Financial Health Indicators</div>
                                 <div class="pdf-indicators">
-                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Basic Liquidity Ratio</span></div>${generateGauge(liqValue, 0, 24, [6, 9, 12, 15, 18], true, document.getElementById('valLiquidity').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: > 12 Months</div></div>
-                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Debt to Asset Ratio</span></div>${generateGauge(daValue, 0, 100, [25, 40, 50, 70, 85], false, document.getElementById('valDebtAsset').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: < 50%</div></div>
+                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Basic Liquidity Ratio</span></div>${generateGauge(liqValue, 0, 24, [6, 9, 12, 15, 18], true, document.getElementById('valLiquidity').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: &gt; 12 Months</div></div>
+                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Debt to Asset Ratio</span></div>${generateGauge(daValue, 0, 100, [25, 40, 50, 70, 85], false, document.getElementById('valDebtAsset').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: &lt; 50%</div></div>
                                     <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Debt Service Ratio (DSR)</span></div>${generateGauge(dsrValue, 0, 100, [15, 20, 30, 50, 65], false, document.getElementById('valDebtService').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: &lt; 30%</div></div>
-                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Savings Ratio</span></div>${generateGauge(savValue, 0, 30, [2.5, 5, 10, 15, 20], true, document.getElementById('valSavings').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: > 10%</div></div>
+                                    <div class="pdf-indicator-card"><div class="pdf-ind-header" style="justify-content: center; margin-bottom: 10px;"><span class="pdf-ind-title">Savings Ratio</span></div>${generateGauge(savValue, 0, 30, [2.5, 5, 10, 15, 20], true, document.getElementById('valSavings').textContent)}<div class="pdf-ind-target" style="text-align: center; margin-top: 10px;">Target: &gt; 10%</div></div>
                                 </div>
                             </div>
                         </div>
@@ -1900,10 +1871,10 @@
                                     <table class="pdf-details-table" style="width: 100%; font-size: 13px;">
                                         <thead>
                                             <tr style="background:#F9FAFB;">
-                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; color:#4B5563; background:#F3F4F6;">Aspect</th>
-                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#4B5563; background:#F3F4F6;">Needs (Fund Required)</th>
-                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#4B5563; background:#F3F4F6;">Current Coverage/Resources</th>
-                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#111827; background:#F3F4F6;">Total Shortfall/(Surplus)</th>
+                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; color:#ffffff; background:#461233;">Aspect</th>
+                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#ffffff; background:#461233;">Needs (Fund Required)</th>
+                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#ffffff; background:#461233;">Current Coverage/Resources</th>
+                                                <th style="padding: 15px; border-bottom: 2px solid #E5E7EB; text-align: right; color:#ffffff; background:#461233;">Total Shortfall/(Surplus)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1958,9 +1929,9 @@
                                 <div class="pdf-section-title" style="font-size: 16px; margin-bottom: 15px;">Income Protection Assessment</div>
                                 <p style="font-size: 12px; color: #4B5563; margin-bottom: 20px;">A solid financial plan starts with a strong shield. Below is the baseline protection your family would need based on simple frameworks.</p>
                                 <div style="display: flex; gap: 20px; align-items: stretch;">
-                                    <div style="flex: 1; background-color: #F0F7FF; border-radius: 12px; padding: 25px; border: 1px solid #DCE8F6; display: flex; flex-direction: column; justify-content: center; gap: 20px;">
-                                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"><div style="font-size: 12px; font-weight: 700; color: #2A4365; margin-bottom: 5px;">Expected Retirement Age</div><div style="font-size: 26px; font-weight: 800; color: #111827;">${expRetAge}</div></div>
-                                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"><div style="font-size: 12px; font-weight: 700; color: #2A4365; margin-bottom: 5px;">Current Annual Income (RM)</div><div style="font-size: 26px; font-weight: 800; color: #111827;">${annIncome.toLocaleString('en-US')}</div></div>
+                                    <div style="flex: 1; background-color: #f8f6f7; border-radius: 12px; padding: 25px; border: 1px solid #ad8b96; display: flex; flex-direction: column; justify-content: center; gap: 20px;">
+                                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"><div style="font-size: 12px; font-weight: 700; color: #461233; margin-bottom: 5px;">Expected Retirement Age</div><div style="font-size: 26px; font-weight: 800; color: #111827;">${expRetAge}</div></div>
+                                        <div style="background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);"><div style="font-size: 12px; font-weight: 700; color: #461233; margin-bottom: 5px;">Current Annual Income (RM)</div><div style="font-size: 26px; font-weight: 800; color: #111827;">${annIncome.toLocaleString('en-US')}</div></div>
                                     </div>
                                     <div style="flex: 1.2; background: linear-gradient(135deg, #8a5766, #461233); border-radius: 12px; padding: 25px; color: white;">
                                         <h3 style="text-align: center; font-size: 16px; font-weight: 800; margin-bottom: 20px; color: white;">Proposed Income Protection</h3>
